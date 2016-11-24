@@ -74,7 +74,6 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         
     }
 
-
 @objc func datePickerValueChanged(sender:UIDatePicker) {
     
     let dateFormatter = NSDateFormatter()
