@@ -14,9 +14,13 @@
 		7B00E06F1DE6E24200B482ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B00E06E1DE6E24200B482ED /* Assets.xcassets */; };
 		7B00E0721DE6E24200B482ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00E0701DE6E24200B482ED /* LaunchScreen.storyboard */; };
 		7B00E07A1DE6E66200B482ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B00E0791DE6E66200B482ED /* DetailViewController.swift */; };
-		7B00E07C1DE6ECA600B482ED /* PersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B00E07B1DE6ECA600B482ED /* PersonData.swift */; };
 		7B00E0841DE71B2100B482ED /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B00E0831DE71B2100B482ED /* TPKeyboardAvoidingScrollView.m */; };
 		7B00E0871DE71D9C00B482ED /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B00E0861DE71D9C00B482ED /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		7BC73BB61DE82FF300403728 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC73BB41DE82FF300403728 /* Person+CoreDataProperties.swift */; };
+		7BC73BB71DE82FF300403728 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC73BB51DE82FF300403728 /* Person.swift */; };
+		7BC73BBA1DE8434600403728 /* PersonListTVCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC73BB81DE8434600403728 /* PersonListTVCellTableViewCell.swift */; };
+		7BC73BBB1DE8434600403728 /* PersonListTVCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC73BB91DE8434600403728 /* PersonListTVCellTableViewCell.xib */; };
+		7BC73BBD1DE85E6500403728 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC73BBC1DE85E6500403728 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +33,16 @@
 		7B00E0711DE6E24200B482ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B00E0731DE6E24200B482ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B00E0791DE6E66200B482ED /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		7B00E07B1DE6ECA600B482ED /* PersonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonData.swift; sourceTree = "<group>"; };
 		7B00E0811DE71B1F00B482ED /* SaveContacts-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SaveContacts-Bridging-Header.h"; sourceTree = "<group>"; };
 		7B00E0821DE71B2100B482ED /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		7B00E0831DE71B2100B482ED /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		7B00E0851DE71D9C00B482ED /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		7B00E0861DE71D9C00B482ED /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		7BC73BB41DE82FF300403728 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7BC73BB51DE82FF300403728 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		7BC73BB81DE8434600403728 /* PersonListTVCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonListTVCellTableViewCell.swift; sourceTree = "<group>"; };
+		7BC73BB91DE8434600403728 /* PersonListTVCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonListTVCellTableViewCell.xib; sourceTree = "<group>"; };
+		7BC73BBC1DE85E6500403728 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC73BBD1DE85E6500403728 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +60,8 @@
 		7B00E0581DE6E24100B482ED = {
 			isa = PBXGroup;
 			children = (
+				7BC73BBC1DE85E6500403728 /* MessageUI.framework */,
+				7BC73BBE1DE86F6800403728 /* Model */,
 				7B00E0801DE71B0500B482ED /* SupprotingFiles */,
 				7B00E0631DE6E24200B482ED /* SaveContacts */,
 				7B00E0621DE6E24100B482ED /* Products */,
@@ -69,9 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				7B00E0641DE6E24200B482ED /* AppDelegate.swift */,
-				7B00E0661DE6E24200B482ED /* ViewController.swift */,
-				7B00E07B1DE6ECA600B482ED /* PersonData.swift */,
-				7B00E0791DE6E66200B482ED /* DetailViewController.swift */,
+				7BC73BC01DE86F8400403728 /* Controllers */,
+				7BC73BBF1DE86F7800403728 /* View */,
 				7B00E0681DE6E24200B482ED /* Main.storyboard */,
 				7B00E06E1DE6E24200B482ED /* Assets.xcassets */,
 				7B00E0701DE6E24200B482ED /* LaunchScreen.storyboard */,
@@ -91,6 +101,33 @@
 				7B00E0811DE71B1F00B482ED /* SaveContacts-Bridging-Header.h */,
 			);
 			name = SupprotingFiles;
+			sourceTree = "<group>";
+		};
+		7BC73BBE1DE86F6800403728 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BC73BB41DE82FF300403728 /* Person+CoreDataProperties.swift */,
+				7BC73BB51DE82FF300403728 /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7BC73BBF1DE86F7800403728 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BC73BB81DE8434600403728 /* PersonListTVCellTableViewCell.swift */,
+				7BC73BB91DE8434600403728 /* PersonListTVCellTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7BC73BC01DE86F8400403728 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B00E0661DE6E24200B482ED /* ViewController.swift */,
+				7B00E0791DE6E66200B482ED /* DetailViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +190,7 @@
 			files = (
 				7B00E0721DE6E24200B482ED /* LaunchScreen.storyboard in Resources */,
 				7B00E06F1DE6E24200B482ED /* Assets.xcassets in Resources */,
+				7BC73BBB1DE8434600403728 /* PersonListTVCellTableViewCell.xib in Resources */,
 				7B00E06A1DE6E24200B482ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,12 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC73BB61DE82FF300403728 /* Person+CoreDataProperties.swift in Sources */,
 				7B00E0671DE6E24200B482ED /* ViewController.swift in Sources */,
 				7B00E06D1DE6E24200B482ED /* SaveContacts.xcdatamodeld in Sources */,
+				7BC73BBA1DE8434600403728 /* PersonListTVCellTableViewCell.swift in Sources */,
 				7B00E0651DE6E24200B482ED /* AppDelegate.swift in Sources */,
 				7B00E0871DE71D9C00B482ED /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				7B00E0841DE71B2100B482ED /* TPKeyboardAvoidingScrollView.m in Sources */,
-				7B00E07C1DE6ECA600B482ED /* PersonData.swift in Sources */,
+				7BC73BB71DE82FF300403728 /* Person.swift in Sources */,
 				7B00E07A1DE6E66200B482ED /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +365,7 @@
 				7B00E0781DE6E24200B482ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

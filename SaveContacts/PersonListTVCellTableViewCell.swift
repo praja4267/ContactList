@@ -10,6 +10,13 @@ import UIKit
 
 class PersonListTVCellTableViewCell: UITableViewCell {
 
+    @IBOutlet var personImage: UIImageView!
+    @IBOutlet var personName: UILabel!
+    @IBOutlet var personMobileNumber: UILabel!
+    @IBOutlet var personEmailAddress: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
